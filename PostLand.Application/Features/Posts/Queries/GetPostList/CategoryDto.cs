@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PostLand.Domain.Entities
+namespace PostLand.Application.Features.Posts.Queries.GetPostList
 {
-    public class Category
+    public class CategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public ICollection<Post> Posts { get; set; } = new HashSet<Post>();
     }
 }
